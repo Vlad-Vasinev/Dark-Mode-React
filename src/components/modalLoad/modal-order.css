@@ -431,6 +431,7 @@
     max-width: 100%;
     padding-top: 0;
     height: var(--app-height);
+    overflow-y: scroll;
   }
 }
 .modal.modal-order .modal__inner {
@@ -529,7 +530,11 @@
     padding: 0;
     height: 100%;
   }
-}
+  /* .modal__inner, .form-order, .modal__body {
+    height: var(--app-height);
+    overflow-y: scroll;
+  }
+} */
 .modal.modal-order .form-order__top {
   -webkit-box-ordinal-group: -1;
   -ms-flex-order: -2;
