@@ -115,6 +115,7 @@
     width: 100%;
     border-radius: 20px;
     height: var(--app-height);
+    border-radius: 0;
     /* height: 100% */
   }
   .loadTitle {
