@@ -56,7 +56,6 @@ const Breeds = () => {
     <div className={classes.breedsPageWrapper} style={{ color: primaryColor }}>
       <BlockMenu></BlockMenu>
       <TextFiller></TextFiller>
-      <TextFiller></TextFiller>
       <div className={classes.breedsList}>
         {
           newApiData.map(elData =>
