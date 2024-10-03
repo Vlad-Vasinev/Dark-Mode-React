@@ -80,10 +80,6 @@ const Breeds = () => {
       </div>
       <TextFiller></TextFiller>
       <TextFiller></TextFiller>
-      <TextFiller></TextFiller>
-      <TextFiller></TextFiller>
-      <TextFiller></TextFiller>
-      <TextFiller></TextFiller>
     </div>
   )
 }
