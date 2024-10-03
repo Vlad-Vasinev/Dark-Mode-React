@@ -15,17 +15,6 @@ const HomePage = () => {
           <ProjectInfo></ProjectInfo>
           <TextFiller></TextFiller>
           <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
-          <TextFiller></TextFiller>
       </div>
     </div>
   )
