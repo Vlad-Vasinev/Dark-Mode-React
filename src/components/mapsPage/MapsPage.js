@@ -176,7 +176,6 @@ const MapsPage = () => {
       </div>
       <TextFiller></TextFiller>
       <TextFiller></TextFiller>
-      <TextFiller></TextFiller>
     </div>
   )
 }
