@@ -432,6 +432,7 @@
     padding-top: 0;
     height: var(--app-height);
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 .modal.modal-order .modal__inner {
