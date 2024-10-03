@@ -1,0 +1,181 @@
+@font-face {
+  src: url('../src/assets/fonts/Jost-Regular.woff');
+  font-weight: 400;
+  font-family: 'Jost-Regular';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../src/assets/fonts/Jost-Medium.woff');
+  font-weight: 500;
+  font-family: 'Jost-Medium';
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none !important;
+  transition: all .3s;
+  display: inline-block;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: -webkit-fill-available;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}
+
+.App {
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+  height: var(--app-height);
+}
+
+.container {
+  max-width: calc(1460);
+  padding: calc(80px) calc(10) 0;
+  margin: 0 auto;
+}
+
+.homeInner {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgb(229, 229, 229);
+  height: calc(60px);
+}
+.homePrimary {
+  width: calc(900px);
+}
+
+.themeButtons{
+  position: fixed;
+  top: calc(10px);
+  right: calc(10px);
+  z-index: 10000;
+  width: calc(120px);
+  background-color: #Ffffff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: calc(4px) calc(6px);
+  height: calc(40px);
+}
+.themeBtn {
+  height: 31px;
+  position: relative;
+  width: 50%;
+}
+.themeBtn:hover svg path{
+    fill: #B4B7FF;
+}
+.themeBtn svg{
+  width: calc(30px);
+  height: calc(30px);
+}
+.themeBtn svg path{
+  transition: all .3s;
+}
+
+.leaflet-container {
+  height: calc(700px);
+  width: 100%;
+}
+
+.mapboxgl-map, .mapboxgl-canvas, .mapboxgl-canary { 
+  height: calc(700px) !important;
+  width: 100%;
+}
+.mapboxgl-popup-content img{
+  border-radius: calc(4px);
+}
+.mapboxgl-popup-close-button{
+  width: calc(20px);
+  height: calc(20px);
+  transform: scale(1.7);
+}
+
+@media(max-width: 768px) {
+  .App {
+    padding: 0 16px 16px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .homeInner {
+    height: auto;
+    padding: 14px 0;
+  }
+  .themeButtons {
+    max-width: unset;
+    width: 120px;
+    bottom: 10px;
+    right: 10px;
+    top: unset;
+    padding: 4px 6px;
+    height: 40px;
+  }
+  .themeBtn svg{
+    width: 30px;
+    height: 30px;
+  }
+  .leaflet-container {
+    height: 350px;
+  }
+  .mapboxgl-popup-content {
+    width: 200px;
+    height: 180px;
+  }
+  .mapboxgl-popup-content img{
+    border-radius: 4px;
+  }
+  .mapboxgl-map, .mapboxgl-canvas, .mapboxgl-canary { 
+    height: 350px !important;
+  }
+  .ant-modal-content {
+    top: 100px;
+  }
+  .mapboxgl-popup-close-button{ 
+    width: 20px;
+    height: 20px;
+  }
+}

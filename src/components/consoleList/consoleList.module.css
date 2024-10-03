@@ -1,0 +1,22 @@
+
+.consoleListEl {
+  box-sizing: border-box;
+  padding: calc(15px);
+  background: #F8F8F7;
+  border-radius: calc(10px);
+  display: flex;
+}
+
+.consoleListEl+.consoleListEl {
+  margin-top: calc(10px);
+}
+
+@media(max-width: 768px) {
+  .consoleListEl { 
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .consoleListEl+.consoleListEl {
+    margin-top: 10px;
+  }
+}

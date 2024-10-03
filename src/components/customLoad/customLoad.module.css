@@ -1,0 +1,160 @@
+.loadWrapper {
+  background-color: #F8F8F7;
+  box-sizing: border-box;
+  padding: calc(20px);
+  width: calc(700px);
+  margin: 0;
+  border-radius: calc(20px);
+  position: relative;
+  height: calc(450px);
+  /* overflow-y: scroll; */
+  z-index: 9999;
+  position: relative;
+  transition: border-color .3s;
+}
+
+.loadTitle {
+  margin-bottom: calc(40px);
+  font-weight: 500;
+  font-family: 'Jost-Medium';
+  font-size: calc(36px);
+  line-height: calc(52px);
+  color: #1D1D1D;
+}
+
+.delItem {
+  cursor: pointer;
+  position: absolute;
+  right: calc(20px);
+  top: calc(20px);
+  width: calc(40px);
+  height: calc(40px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: calc(10px);
+}
+.delItem:hover {
+  background-color: #0093EF;
+}
+.delItem:hover svg path {
+  fill: #000000;
+}
+.delItem svg path {
+  transition: all .3s;
+  fill: #FF868E;
+}
+
+.loadDragArea {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(320px);
+  font-weight: 500;
+  font-family: 'Jost-Medium';
+  color: #8C8C8C;
+  box-sizing: border-box;
+  padding: calc(60px);
+  background-color: #ffffff;
+  margin-bottom: calc(20px);
+  background-image: url('../../assets/images/load-area-bg.png');
+  background-position: center;
+  background-size: calc(200px) calc(200px);
+  background-repeat: no-repeat;
+  border-radius: calc(20px);
+  border: calc(2px) dashed #FBE0DC;
+}
+
+.loadDragInner span {
+  color: #1D1D1D;
+}
+.loadDragLink {
+  margin: 0 calc(4px);
+  color: #1D1D1D;
+  border: none;
+  background-color: transparent;
+}
+.loadInfo {
+  color: #8C8C8C;
+  font-size: calc(20px);
+  line-height: calc(30px);
+  font-weight: 400;
+  font-family: 'Jost-Regular';
+}
+
+.loadImg {
+  text-align: center;
+  width: calc(210px);
+  margin: 0 auto 28px;
+}
+.loadImg img {
+  object-fit: cover;
+  width: 100%;
+  max-height: calc(140px);
+}
+.loadImagesLabel {
+  cursor: pointer;
+  margin-right: calc(20px);
+  padding: calc(10px);
+  background: transparent;
+  border-radius: calc(5px);
+  font-family: 'Jost-Medium';
+  font-weight: 500;
+  box-sizing: border-box;
+  color: #1D1D1D;
+  transition: all .3s;
+}
+.loadImagesInput {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .loadWrapper {
+    padding: 20px 20px 50px 20px;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%
+  }
+  .loadTitle {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+  }
+  .delItem {
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .loadDragArea {
+    min-height: 320px;
+    padding: 60px;
+    margin-bottom: 20px;
+    background-size: 200px 200px;
+    border-radius: 20px;
+    border: 2px dashed #FBE0DC;
+  }
+  .loadDragLink {
+    margin: 0 4px;
+  }
+  .loadInfo {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .loadImg {
+    width: 210px;
+    margin: 0 auto 28px;
+  }
+  .loadImg img {
+    max-height: 140px;
+  }
+  .loadImagesLabel {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

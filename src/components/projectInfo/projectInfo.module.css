@@ -1,0 +1,51 @@
+ul.projectUl li + li {
+  margin-top: calc(8px);
+}
+
+h2 {
+  margin-bottom: calc(10px);
+}
+
+.projectInfoWrapper {
+  margin-top: calc(100px);
+}
+
+h2 {
+  font-size: calc(32px);
+  line-height: calc(44px);
+  font-weight: 700;
+  color: #282828;
+  font-family: 'Jost-Regular';
+}
+
+h3 {
+  font-size: calc(20px);
+  line-height: calc(28px);
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: calc(18px);
+}
+
+ul.projectUl {
+  margin-bottom: calc(24px);
+}
+
+ul.projectUl li {
+  font-size: calc(20px);
+  line-height: calc(28px);
+  font-weight: 400;
+  color: #282828;
+}
+
+ul.projectUl li a{
+  font-size: calc(20px);
+  line-height: calc(28px);
+  font-weight: 400;
+  color: #282828;
+}
+
+@media(max-width: 768px) {
+  .projectInfoWrapper {
+    margin-top: 150px;
+  }
+}

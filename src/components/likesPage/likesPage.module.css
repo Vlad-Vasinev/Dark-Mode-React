@@ -1,0 +1,82 @@
+.reactionInner {
+  display: flex;
+  justify-content: center;
+  padding: calc(70px) calc(10px) calc(30px);
+}
+.reactionInner input{ 
+  display: none;
+}
+.reactionSecondary {
+  width: calc(900px);
+}
+
+.likesBlock {
+  margin-bottom: calc(30px);
+}
+.likesBlock {
+  padding: calc(34px) calc(14px);
+  border-radius: calc(12px);
+  background-color: #ffffff;
+  margin-top: calc(20px);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, calc(210px));
+  grid-gap: calc(34px);
+}
+.likesItem {
+  position: relative;
+  transition: all .3s;
+}
+.likesItem:hover .delItem {
+  display: grid;
+}
+.likesItem img {
+  width: 100%;
+  object-fit: cover;
+  height: calc(140px);
+  border-radius: calc(10px);
+}
+
+.delItem {
+  cursor: pointer;
+  position: absolute;
+  right: calc(10px);
+  top: calc(10px);
+  width: calc(40px);
+  height: calc(40px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF868E;
+  border-radius: calc(10px);
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .reactionInner {
+    padding: 160px 10px 30px;
+  }
+  .reactionSecondary {
+    width: unset;
+  }
+  .likesBlock { 
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    grid-template-columns: repeat(auto-fit, 210px);
+    grid-gap: 24px;
+  }
+  .likesItem img {
+    height: 140px;
+    border-radius: 10px;
+  }
+  .delItem {
+    border-radius: 10px;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,10 @@
+
+.mapsWrapper {
+  padding: calc(60px) calc(20px);
+}
+
+@media(max-width: 768px) {
+  .mapsWrapper {
+    padding: 0;
+  }
+}
