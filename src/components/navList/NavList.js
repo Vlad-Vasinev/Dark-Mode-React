@@ -19,7 +19,7 @@ const NavList = () => {
                 <Link className={classes.navItemLink} style={{ background: backgroundNav }} to="/Products" > Characters </Link>
             </li>
             <li className={classes.navItem}>
-                <Link className={classes.navItemLink} style={{ background: backgroundNav }} to="/Breeds"> Characters List </Link>
+                <Link className={classes.navItemLink} style={{ background: backgroundNav }} to="/Breeds"> List/Upload </Link>
             </li>
             <li className={classes.navItem}>
                 <Link className={classes.navItemLink} style={{ background: backgroundNav }} to="/MapsPage"> Maps </Link>
