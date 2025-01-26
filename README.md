@@ -1,4 +1,4 @@
-# Dark Mode React
+# Dark-Mode-React
 
 ## This project is about: 💻
 - making simple color theme controller using React + redux
